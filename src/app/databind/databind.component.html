@@ -1,0 +1,12 @@
+
+<input type="text" 
+class="form-control"
+(keyup) = "onUpdateUserName($event)"
+[(ngModel)]="username">
+<br>
+<button class="btn btn-primary" 
+[disabled] = "!allowUserName" 
+(click) = "clearUserField()"
+>Add User</button>
+
+<p>{{ username }}</p>
